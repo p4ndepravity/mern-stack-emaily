@@ -23,6 +23,9 @@ class Header extends Component {
             Credits: {this.props.auth.credits}
           </li>,
           <li key="3">
+            <Link to="/surveys">Dashboard</Link>
+          </li>,
+          <li key="4">
             <a href="/api/logout">Logout</a>
           </li>
         ];
@@ -36,6 +39,7 @@ class Header extends Component {
           <Link
             to={this.props.auth ? "/surveys" : "/"}
             className="left brand-logo"
+            style={{ marginLeft: 10 }}
           >
             Trent Emaily
           </Link>
